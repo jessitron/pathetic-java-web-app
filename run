@@ -1,6 +1,10 @@
+# expect honeycomb_api_key to be exported already
+
+# cp ~/code/open-telemetry/opentelemetry-java-instrumentation/examples/extension/build/libs/opentelemetry-java-instrumentation-extension-demo-1.0-all.jar .
+
 export OTEL_SERVICE_NAME=pathetic-java-web-app
 export HONEYCOMB_METRICS_DATASET=mysterious-jvm-metrics
-export OTEL_JAVAAGENT_EXTENSIONS=opentelemetry-java-instrumentation-extension-demo-1.0-all.jar
+# export OTEL_JAVAAGENT_EXTENSIONS=opentelemetry-java-instrumentation-extension-demo-1.0-all.jar
 export OTEL_EXPORTER_OTLP_ENDPOINT=https://api.honeycomb.io:443
 export OTEL_EXPORTER_OTLP_HEADERS="x-honeycomb-team=$HONEYCOMB_API_KEY"
 export OTEL_TRACES_EXPORTER=otlp
