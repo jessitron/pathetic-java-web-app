@@ -1,11 +1,13 @@
-# Get Started With Spring Boot
+# A java app that tries out stuff in the agent
 
-set some env vars
+set one env var
 
 ```
-export SERVICE_NAME=pathetic-java-web-app
 export HONEYCOMB_API_KEY=ffaaffafafafafafffaff # substitute your key
-export HONEYCOMB_METRICS_DATASET=mysterious-jvm-metrics
 ```
+
+download the latest opentelemetry-javaagent.jar from https://github.com/open-telemetry/opentelemetry-java-instrumentation
+
+copy in some extensions... I got mine from https://github.com/jessitron/otel-java-span-processor
 
 `./run`
